@@ -8,4 +8,3 @@ RSpec.configure do |config|
     c.syntax = [:should, :expect]
   end
 end
-
