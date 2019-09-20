@@ -25,11 +25,12 @@ module NavigationHelpers
     when /^the Similar Movies page for "(.*)"$/
       same_director_path Movie.find_by_title($1)
       
-    when /^the RottenPotatoes home page$/ then '/movies'  
+    when /^the RottenPotatoes home page$/ then '/movies' 
+      
+    when /^the movies page$/ then '/movies'
       
     when /^the (RottenPotatoes)?home\s?page$/ then '/movies'
     
-    when /^the movies page$/ then '/movies'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
